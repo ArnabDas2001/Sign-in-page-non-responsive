@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    align-content: center;
+    background: url(https://free4kwallpapers.com/uploads/originals/2021/03/13/gradient-lines-wide-background-wallpaper.png);
+    background-size: cover;
+}
+.card{
+    height: 520px;
+    width: 350px;
+    background-color: rgba(235, 246, 255, 0.219);
+    backdrop-filter: blur(18px);
+    border-radius: 30px;
+    box-shadow: 0 10px 25px 0 rgba(27, 27, 27, 0.466), inset 0 -8px 16px 0 rgba(197, 226, 252, 0.253);
+    margin-left: 500px;  
+    margin-top: 55px;
+}
+.form{
+    position:absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: none;
+    z-index: 10;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    color: rgb(0, 219, 219);
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputbox{
+    position: relative;
+    width: 265px;
+    margin-top: 30px;
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    border-radius: 20px 10px 20px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;   
+}
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #c0bcbc;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span{
+    color:rgb(0, 219, 219);
+    transform: translateX(0) translateY(-34px);
+    font-size: 0.85em;
+}
+.inputbox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 265px;
+    height: 2px;
+    background: rgb(0, 219, 219);
+    border-radius: 20px 4px 20px 4px;
+    transition: 0.4s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i{
+    height: 44px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    margin: 20px 0;
+    font-size: 0.85em;
+    color: #c0bcbc;
+    text-decoration: none;
+}
+.links a:hover{
+    color: rgb(0, 219, 219);
+}
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: rgb(0, 219, 219);
+    padding: 11px 25px;
+    margin-top: 2px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Orlogin{
+    margin: 16px 0;
+    font-size: 0.9em;
+    color: #c0bcbc;
+    text-decoration: none;
+    text-align: center;
+}
+.link1{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    color: #e2dbdb;
+    margin: 0 0 20px 0;
+    
+}
+.google, .facebook, .twitter{
+    width: 50%;
+    height: 42px;
+    line-height: 45px;
+    margin-top: 10px;   
+}
+.google{
+    margin-left: 0px;
+    padding-left: 31px;
+    margin-left: 4px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.google:hover{
+    background: rgb(0, 219, 219);
+    color: #18191b;
+    border-radius: 20px;
+}
+.facebook{
+    margin-left: 0px;
+    padding-left: 30px;
+    margin-left: 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.facebook:hover{
+    background: rgb(0, 219, 219);
+    color: #18191b;
+    border-radius: 20px;
+}
+.twitter{
+    margin-left: 0px;
+    padding-left: 30px;
+    margin-left: 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.twitter:hover{
+    background: rgb(0, 219, 219);
+    color: #18191b;
+    border-radius: 20px;
+}
+.signup{
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: #c0bcbc;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.signup a{
+    color: rgb(0, 219, 219);
+    padding-left: 5px;
+}
