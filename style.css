@@ -24,8 +24,11 @@ body{
     box-shadow: 0 10px 25px 0 rgba(27, 27, 27, 0.466), inset 0 -8px 16px 0 rgba(197, 226, 252, 0.253);
     margin-left: 500px;  
     margin-top: 55px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.5s ease-in;
 }
-.form{
+.form .front{
     position:absolute;
     inset: 2px;
     border-radius: 8px;
@@ -34,6 +37,19 @@ body{
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
+}
+.form .back{
+    position:absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: none;
+    z-index: 10;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.front,.back{
+    backface-visibility: hidden;
 }
 .form h2{
     color: rgb(0, 219, 219);
@@ -200,4 +216,57 @@ input[type="submit"]{
     padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+
+
+.inputbox2{
+    position: relative;
+    width: 265px;
+    margin-top: 30px;
+}
+.inputbox2 input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    border-radius: 20px 10px 20px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputbox2 span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #c0bcbc;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputbox2 input:valid ~ span,
+.inputbox2 input:focus ~ span{
+    color:rgb(0, 219, 219);
+    transform: translateX(0) translateY(-34px);
+    font-size: 0.85em;
+}
+.inputbox2 i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 265px;
+    height: 2px;
+    background: rgb(0, 219, 219);
+    border-radius: 20px 4px 20px 4px;
+    transition: 0.4s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputbox2 input:valid ~ i,
+.inputbox2 input:focus ~ i{
+    height: 44px;
 }
