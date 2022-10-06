@@ -10,9 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card" id="card">
-        <div class="form">
-            <div class="front">
+
+    <button>Signup/Signin</button>
+    <!-- <div class="card">
+        <div class="form" id="form">
+
+     front
+        <div class="front">
             <h2>Sign in</h2>
             <div class="inputbox">
                 <input type="text" required="required">
@@ -46,11 +50,16 @@
         </div>
     </div>
 
+    back
     <div class="back">
         <h2>Sign up</h2>
         <div class="inputbox2">
             <input type="text" required="required">
-            <span>name</span>
+            <span>Username</span>
+            <i></i>
+        </div>
+        <div class="inputbox2">
+            <input type="text" required="required">
             <span>Email or Phone</span>
             <i></i>
         </div>
@@ -59,7 +68,7 @@
             <span>Password</span>
             <i></i>
         </div>
-    <input type="Submit" value="Signup">
+    <input type="Submit" value="Signup" style="margin-top: 15px;">
     <div class="OrSign">Or Signup with</div>
     <div class="link2">
         <div class="google">
@@ -72,18 +81,22 @@
             <i class="fab fa-twitter"></i>
         </div>
     </div>
-    <div class="login">Already have an account?
-        <button class="sunow" onclick="flip()"
+    <div class="signup1">Already have an account?
+        <button class="sunow1" onclick="flip1()"
         >Login</button>
     </div>
 </div>
-    </div>
+</div>
 </div>
 <script type="text/javascript">
     function flip(){
-        document.getElementById("card").style.
+        document.getElementById("form").style.
             transform='rotateY(180deg)';
 }
-</script>
+function flip1(){
+        document.getElementById("form").style.
+            transform='rotateY(0deg)';
+}
+</script> -->
 </body>
 </html>
