@@ -12,8 +12,42 @@ body{
     background-repeat: no-repeat;
     align-items: center;
     align-content: center;
-    background: url(https://free4kwallpapers.com/uploads/originals/2021/03/13/gradient-lines-wide-background-wallpaper.png);
     background-size: cover;
+}
+.content{
+    background: url(https://free4kwallpapers.com/uploads/originals/2021/03/13/gradient-lines-wide-background-wallpaper.png);
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    background-size: cover;
+    height: 625px;
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+.mainbutton{
+    margin-left: 625px;
+    margin-top: 280px;
+    background: aqua;
+    padding: 1%;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.content#blur.active{
+    filter: blur(30px);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+#card.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 .card{
     height: 520px;
@@ -21,6 +55,9 @@ body{
     margin-left: 500px;  
     margin-top: 55px;
     position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 .form{
     height: 100%;

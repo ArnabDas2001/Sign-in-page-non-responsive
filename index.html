@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Play&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <button>Signup/Signin</button>
-    <!-- <div class="card">
+<div class="content"id="blur">
+    <button class="mainbutton" onclick="toggle()">Signup/Signin</button>
+</div>
+    <div class="card" id="card">
         <div class="form" id="form">
 
-     front
+     <!-- front -->
         <div class="front">
             <h2>Sign in</h2>
             <div class="inputbox">
@@ -50,7 +51,7 @@
         </div>
     </div>
 
-    back
+    <!-- back -->
     <div class="back">
         <h2>Sign up</h2>
         <div class="inputbox2">
@@ -89,6 +90,12 @@
 </div>
 </div>
 <script type="text/javascript">
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active');
+        var card = document.getElementById('card');
+        card.classList.toggle('active');
+    }
     function flip(){
         document.getElementById("form").style.
             transform='rotateY(180deg)';
@@ -97,6 +104,6 @@ function flip1(){
         document.getElementById("form").style.
             transform='rotateY(0deg)';
 }
-</script> -->
+</script>
 </body>
 </html>
