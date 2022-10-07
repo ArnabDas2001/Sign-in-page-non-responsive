@@ -93,7 +93,7 @@ body{
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(50px);
     backface-visibility: hidden;
 }
 
@@ -269,7 +269,7 @@ input[type="submit"]{
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(50px);
     transform: rotateY(180deg);
     backface-visibility: hidden;
 }
