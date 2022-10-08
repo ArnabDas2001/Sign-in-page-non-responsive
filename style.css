@@ -13,6 +13,7 @@ body{
     align-items: center;
     align-content: center;
     background-size: cover;
+    overflow: hidden;
 }
 .content{
     background: url(https://free4kwallpapers.com/uploads/originals/2021/03/13/gradient-lines-wide-background-wallpaper.png);
@@ -20,7 +21,7 @@ body{
     padding: 0;
     object-fit: cover;
     background-size: cover;
-    height: 625px;
+    height: 100%;
     position: absolute;
     width: 100%;
     transition: 0.5s;
@@ -43,6 +44,7 @@ body{
     overflow: hidden;
     pointer-events: none;
     user-select: none;
+    transform: scale(1.2);
 }
 #card.active{
     visibility: visible;
@@ -86,7 +88,7 @@ body{
     height: 100%;
     width: 100%;
     box-shadow: 0 10px 25px 0 rgba(27, 27, 27, 0.466), inset 0 -8px 16px 0 rgba(197, 226, 252, 0.253);
-    border-radius: 30px;
+    border-radius: 20px;
     background: none;
     position: absolute;
     z-index: 1;
@@ -96,7 +98,24 @@ body{
     backdrop-filter: blur(50px);
     backface-visibility: hidden;
 }
-
+.front .close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: rgb(36, 36, 41);
+    transition: 0.5s;
+    font-size: large;
+    background: rgba(196, 221, 255, 0.719);
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+}
+.front .close-btn:hover{
+    background: rgb(0, 219, 219);
+}
 .inputbox{
     position: relative;
     width: 265px;
@@ -264,7 +283,7 @@ input[type="submit"]{
     height: 100%;
     width: 100%;
     box-shadow: 0 10px 25px 0 rgba(27, 27, 27, 0.466), inset 0 -8px 16px 0 rgba(197, 226, 252, 0.253);
-    border-radius: 30px;
+    border-radius: 20px;
     background: none;
     padding: 40px 40px;
     display: flex;
@@ -272,6 +291,24 @@ input[type="submit"]{
     backdrop-filter: blur(50px);
     transform: rotateY(180deg);
     backface-visibility: hidden;
+}
+.back .close-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: rgb(36, 36, 41);
+    transition: 0.5s;
+    font-size: 18px;
+    background: rgba(196, 221, 255, 0.719);
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+}
+.back .close-btn:hover{
+    background: rgb(0, 219, 219);
 }
 
 .inputbox2{
